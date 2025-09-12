@@ -3,7 +3,6 @@ package br.com.tripler.rh.application.model.entity;
 import jakarta.persistence.Id;
 import org.jspecify.annotations.NonNull;
 
-//@Entity
 public class Setor {
     @Id
     @NonNull
