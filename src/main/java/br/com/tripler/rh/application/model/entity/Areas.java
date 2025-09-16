@@ -4,9 +4,13 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "areas", schema="rtcecom_rh")
+@Table(name = "tab_areas", schema="rtcecom_rh")
 public class Areas {
     @Id
     @Column(name="id")
@@ -20,36 +24,4 @@ public class Areas {
 
     @Column(name="area_enc_func_id")
     private Long areaEncFuncId;
-
-    public Long getAreaId() {
-        return areaId;
-    }
-
-    public void setAreaId(Long areaId) {
-        this.areaId = areaId;
-    }
-
-    public String getAreaNome() {
-        return areaNome;
-    }
-
-    public void setAreaNome(String areaNome) {
-        this.areaNome = areaNome;
-    }
-
-    public Long getAreaDeptoId() {
-        return areaDeptoId;
-    }
-
-    public void setAreaDeptoId(Long areaDeptoId) {
-        this.areaDeptoId = areaDeptoId;
-    }
-
-    public Long getAreaEncFuncId() {
-        return areaEncFuncId;
-    }
-
-    public void setAreaEncFuncId(Long areaEncFuncId) {
-        this.areaEncFuncId = areaEncFuncId;
-    }
 }
