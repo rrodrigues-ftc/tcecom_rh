@@ -36,4 +36,5 @@ public class Cargos {
             inverseJoinColumns = @JoinColumn(name = "setor_id"))
     private Set<Setores> setores;
 
+
 }

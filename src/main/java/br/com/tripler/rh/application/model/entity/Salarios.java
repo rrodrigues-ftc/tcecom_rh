@@ -67,4 +67,5 @@ public class Salarios {
             inverseJoinColumns = @JoinColumn(name = "cargo_id"))
     private Set<Cargos> cargos;
 
+
 }

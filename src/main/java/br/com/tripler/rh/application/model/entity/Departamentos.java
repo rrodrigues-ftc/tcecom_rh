@@ -36,4 +36,5 @@ public class Departamentos {
             inverseJoinColumns = @JoinColumn(name = "area_id"))
     private Set<Areas> areas;
 
+
 }

@@ -61,4 +61,5 @@ public class Funcionarios {
             inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
     private Set<DominioMunicipios> dominioMunicipios ;
 
+
 }

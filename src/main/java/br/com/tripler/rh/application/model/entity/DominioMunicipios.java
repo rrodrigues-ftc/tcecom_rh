@@ -49,4 +49,5 @@ public class DominioMunicipios {
     @Column(name="munic_uf_cod")
     private Integer municUfCod;
 
+
 }

@@ -45,4 +45,5 @@ public class Empresas {
             inverseJoinColumns = @JoinColumn(name = "end_id"))
     private Set<Enderecos> enderecos;
 
+
 }

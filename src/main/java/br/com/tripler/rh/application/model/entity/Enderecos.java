@@ -58,6 +58,9 @@ public class Enderecos {
     private Set<DominioMunicipios> dominioMunicipios;
 
     /*
+
+    COMO PROCEDER NESTE CASO DE CAMPO QUE PODE SER CPF (tab_funcionarios) ou CNPJ (tab_empresas) ???
+
     @OneToOne(fetch = FetchType.LAZY)
     @JoinTable(name = "tab_funcionarios",
             joinColumns = @JoinColumn(name = "end_codigo_municipio"),

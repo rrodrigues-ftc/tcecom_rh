@@ -42,4 +42,5 @@ public class Setores{
             inverseJoinColumns = @JoinColumn(name = "depto_id"))
     private Set<Departamentos> departamentos;
 
+
 }

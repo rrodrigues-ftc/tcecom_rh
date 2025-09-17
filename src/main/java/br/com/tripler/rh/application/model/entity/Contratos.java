@@ -53,4 +53,5 @@ public class Contratos {
             inverseJoinColumns = @JoinColumn(name = "func_id"))
     private Set<Funcionarios> funcionarios;
 
+
 }

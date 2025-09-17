@@ -26,4 +26,5 @@ public class DominioLogradouros {
     @Column(name="lograd_apelido")
     private String logradApelido;
 
+
 }

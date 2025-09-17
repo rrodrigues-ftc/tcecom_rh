@@ -52,4 +52,5 @@ public class Dependentes {
             inverseJoinColumns = @JoinColumn(name = "func_id"))
     private Set<Funcionarios> funcionarios;
 
+
 }
