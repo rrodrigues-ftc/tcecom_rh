@@ -45,21 +45,21 @@ public class Enderecos {
     @Column(name="end_cpf_cnpj")
     private String endCpfCnpj;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_dom_logradouros",
-            joinColumns = @JoinColumn(name = "end_logradouro_id"),
-            inverseJoinColumns = @JoinColumn(name = "log_id"))
-    private Set<DominioLogradouros> dominioLogradouros;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_dom_municipios",
-            joinColumns = @JoinColumn(name = "end_codigo_municipio"),
-            inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
-    private Set<DominioMunicipios> dominioMunicipios;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_dom_tipos",
-            joinColumns = @JoinColumn(name = "end_tipo_id"),
-            inverseJoinColumns = @JoinColumn(name = "tp_id"))
-    private Set<DominioTipos> dominioTipos;
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_dom_logradouros",
+//            joinColumns = @JoinColumn(name = "end_logradouro_id"),
+//            inverseJoinColumns = @JoinColumn(name = "log_id"))
+//    private Set<DominioLogradouros> dominioLogradouros;
+//
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_dom_municipios",
+//            joinColumns = @JoinColumn(name = "end_codigo_municipio"),
+//            inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
+//    private Set<DominioMunicipios> dominioMunicipios;
+//
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_dom_tipos",
+//            joinColumns = @JoinColumn(name = "end_tipo_id"),
+//            inverseJoinColumns = @JoinColumn(name = "tp_id"))
+//    private Set<DominioTipos> dominioTipos;
 }

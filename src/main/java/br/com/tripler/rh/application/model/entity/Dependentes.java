@@ -45,12 +45,12 @@ public class Dependentes {
 
     @Column(name="dep_observacoes")
     private String depObservacoes;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_funcionarios",
-            joinColumns = @JoinColumn(name = "dep_funcionario_id"),
-            inverseJoinColumns = @JoinColumn(name = "func_id"))
-    private Set<Funcionarios> funcionarios;
+//
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_funcionarios",
+//            joinColumns = @JoinColumn(name = "dep_funcionario_id"),
+//            inverseJoinColumns = @JoinColumn(name = "func_id"))
+//    private Set<Funcionarios> funcionarios;
 
 
 }

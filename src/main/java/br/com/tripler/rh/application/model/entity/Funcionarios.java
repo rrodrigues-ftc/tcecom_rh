@@ -55,11 +55,11 @@ public class Funcionarios {
     @Column(name="func_docto_estrangeiro")
     private String funcDoctoEstrangeiro;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_municipios",
-            joinColumns = @JoinColumn(name = "func_natural_id"),
-            inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
-    private Set<DominioMunicipios> dominioMunicipios ;
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_municipios",
+//            joinColumns = @JoinColumn(name = "func_natural_id"),
+//            inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
+//    private Set<DominioMunicipios> dominioMunicipios ;
 
 
 }

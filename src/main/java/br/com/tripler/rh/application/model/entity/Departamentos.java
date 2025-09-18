@@ -30,10 +30,10 @@ public class Departamentos {
     @Column(name="depto_encarregado_id")
     private Long deptoEncarregadoId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_areas",
-            joinColumns = @JoinColumn(name = "depto_area_id"),
-            inverseJoinColumns = @JoinColumn(name = "area_id"))
-    private Set<Areas> areas;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_areas",
+//            joinColumns = @JoinColumn(name = "depto_area_id"),
+//            inverseJoinColumns = @JoinColumn(name = "area_id"))
+//    private Set<Areas> areas;
 
 }

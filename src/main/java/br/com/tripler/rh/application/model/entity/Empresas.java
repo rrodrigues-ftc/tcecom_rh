@@ -38,12 +38,12 @@ public class Empresas {
 
     @Column(name="emp_endereco_Id")
     private Long empEnderecoId;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_enderecos",
-            joinColumns = @JoinColumn(name = "emp_endereco_Id"),
-            inverseJoinColumns = @JoinColumn(name = "end_id"))
-    private Set<Enderecos> enderecos;
+//
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_enderecos",
+//            joinColumns = @JoinColumn(name = "emp_endereco_Id"),
+//            inverseJoinColumns = @JoinColumn(name = "end_id"))
+//    private Set<Enderecos> enderecos;
 
 
 }

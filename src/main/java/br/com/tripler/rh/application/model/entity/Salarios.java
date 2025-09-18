@@ -43,29 +43,29 @@ public class Salarios {
     @Column(name="sal_setor_id")
     private Long salSetorId;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_funcionarios",
-    joinColumns = @JoinColumn(name = "sal_id"),
-            inverseJoinColumns = @JoinColumn(name = "func_id"))
-    private Set<Funcionarios> funcionarios;
-
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_contratos",
-            joinColumns = @JoinColumn(name = "sal_contrato_id"),
-            inverseJoinColumns = @JoinColumn(name = "contr_id"))
-    private Set<Contratos> contratos;
-
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_setores",
-            joinColumns = @JoinColumn(name = "sal_setor_id"),
-            inverseJoinColumns = @JoinColumn(name = "setor_id"))
-    private Set<Setores> setores;
-
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_cargos",
-            joinColumns = @JoinColumn(name = "sal_cargo_id"),
-            inverseJoinColumns = @JoinColumn(name = "cargo_id"))
-    private Set<Cargos> cargos;
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_funcionarios",
+//    joinColumns = @JoinColumn(name = "sal_id"),
+//            inverseJoinColumns = @JoinColumn(name = "func_id"))
+//    private Set<Funcionarios> funcionarios;
+//
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_contratos",
+//            joinColumns = @JoinColumn(name = "sal_contrato_id"),
+//            inverseJoinColumns = @JoinColumn(name = "contr_id"))
+//    private Set<Contratos> contratos;
+//
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_setores",
+//            joinColumns = @JoinColumn(name = "sal_setor_id"),
+//            inverseJoinColumns = @JoinColumn(name = "setor_id"))
+//    private Set<Setores> setores;
+//
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_cargos",
+//            joinColumns = @JoinColumn(name = "sal_cargo_id"),
+//            inverseJoinColumns = @JoinColumn(name = "cargo_id"))
+//    private Set<Cargos> cargos;
 
 
 }

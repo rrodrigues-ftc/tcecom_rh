@@ -41,17 +41,17 @@ public class Contratos {
     @Column(name="contr_dias_experiencia")
     private Integer contrDiasExperiencia;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_empresas",
-            joinColumns = @JoinColumn(name = "contr_empresa_id"),
-            inverseJoinColumns = @JoinColumn(name = "emp_id"))
-    private Set<Empresas> empresas;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_funcionarios",
-            joinColumns = @JoinColumn(name = "contr_funcionario_id"),
-            inverseJoinColumns = @JoinColumn(name = "func_id"))
-    private Set<Funcionarios> funcionarios;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_empresas",
+//            joinColumns = @JoinColumn(name = "contr_empresa_id"),
+//            inverseJoinColumns = @JoinColumn(name = "emp_id"))
+//    private Set<Empresas> empresas;
+//
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_funcionarios",
+//            joinColumns = @JoinColumn(name = "contr_funcionario_id"),
+//            inverseJoinColumns = @JoinColumn(name = "func_id"))
+//    private Set<Funcionarios> funcionarios;
 
 
 }

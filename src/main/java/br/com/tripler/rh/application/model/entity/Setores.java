@@ -30,17 +30,17 @@ public class Setores{
     @Column(name="setor_encarregado_id")
     private Long setorEncarregadoId;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_enderecos",
-            joinColumns = @JoinColumn(name = "emp_endereco_Id"),
-            inverseJoinColumns = @JoinColumn(name = "end_id"))
-    private Set<Enderecos> enderecos;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_departamentos",
-            joinColumns = @JoinColumn(name = "setor_departamento_id"),
-            inverseJoinColumns = @JoinColumn(name = "depto_id"))
-    private Set<Departamentos> departamentos;
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_enderecos",
+//            joinColumns = @JoinColumn(name = "emp_endereco_Id"),
+//            inverseJoinColumns = @JoinColumn(name = "end_id"))
+//    private Set<Enderecos> enderecos;
+//
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_departamentos",
+//            joinColumns = @JoinColumn(name = "setor_departamento_id"),
+//            inverseJoinColumns = @JoinColumn(name = "depto_id"))
+//    private Set<Departamentos> departamentos;
 
 
 }

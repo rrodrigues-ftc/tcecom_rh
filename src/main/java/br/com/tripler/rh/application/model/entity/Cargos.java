@@ -29,12 +29,12 @@ public class Cargos {
 
     @Column(name="cargo_flag_lider")
     private Boolean cargoFlagLider;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_setores",
-            joinColumns = @JoinColumn(name = "cargo_setor_id"),
-            inverseJoinColumns = @JoinColumn(name = "setor_id"))
-    private Set<Setores> setores;
+//
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_setores",
+//            joinColumns = @JoinColumn(name = "cargo_setor_id"),
+//            inverseJoinColumns = @JoinColumn(name = "setor_id"))
+//    private Set<Setores> setores;
 
 
 }
