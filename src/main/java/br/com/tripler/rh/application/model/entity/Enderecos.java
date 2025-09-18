@@ -37,10 +37,10 @@ public class Enderecos {
     private String endCep;
 
     @Column(name="end_codigo_municipio")
-    private Float endCodMunicipio;
+    private Long endCodMunicipio;
 
-    @Column(name="end_tipo")
-    private Float endTipo;
+    @Column(name="end_tipo_id")
+    private Long endTipoId;
 
     @Column(name="end_cpf_cnpj")
     private String endCpfCnpj;
@@ -57,15 +57,9 @@ public class Enderecos {
             inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
     private Set<DominioMunicipios> dominioMunicipios;
 
-    /*
-
-    COMO PROCEDER NESTE CASO DE CAMPO QUE PODE SER CPF (tab_funcionarios) ou CNPJ (tab_empresas) ???
-
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_funcionarios",
-            joinColumns = @JoinColumn(name = "end_codigo_municipio"),
-            inverseJoinColumns = @JoinColumn(name = "munic_ibge_cod_completo"))
-    private Set<DominioMunicipios> dominioMunicipios;
-     */
-
+    @JoinTable(name = "tab_dom_tipos",
+            joinColumns = @JoinColumn(name = "end_tipo_id"),
+            inverseJoinColumns = @JoinColumn(name = "tp_id"))
+    private Set<DominioTipos> dominioTipos;
 }

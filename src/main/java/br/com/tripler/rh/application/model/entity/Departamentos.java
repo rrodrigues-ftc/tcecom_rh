@@ -14,7 +14,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "tab_deptos", schema="rtcecom_rh")
+@Table(name = "tab_departamentos", schema="rtcecom_rh")
 public class Departamentos {
     @Id
     @NonNull
@@ -35,6 +35,5 @@ public class Departamentos {
             joinColumns = @JoinColumn(name = "depto_area_id"),
             inverseJoinColumns = @JoinColumn(name = "area_id"))
     private Set<Areas> areas;
-
 
 }
