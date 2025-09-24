@@ -18,6 +18,7 @@ import java.util.Set;
 public class Departamentos {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="depto_id")
     private Long deptoId;
 

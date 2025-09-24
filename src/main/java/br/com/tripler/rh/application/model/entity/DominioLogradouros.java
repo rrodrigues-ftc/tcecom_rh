@@ -17,6 +17,7 @@ import org.jspecify.annotations.NonNull;
 public class DominioLogradouros {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="lograd_id")
     private Long logradId;
 

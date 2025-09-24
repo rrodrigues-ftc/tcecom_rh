@@ -1,9 +1,6 @@
 package br.com.tripler.rh.application.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,8 +16,9 @@ import org.jspecify.annotations.NonNull;
 public class DominioMunicipios {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="munic_ibge_cod_completo")
-    private Float municIbgeCodCompleto;
+    private Long municIbgeCodCompleto;
 
     @Column(name="munic_nome")
     private String municNome;

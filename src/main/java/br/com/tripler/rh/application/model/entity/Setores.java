@@ -18,6 +18,7 @@ import java.util.Set;
 public class Setores{
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="setor_id")
     private Long setorId;
 

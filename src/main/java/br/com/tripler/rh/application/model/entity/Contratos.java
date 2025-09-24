@@ -19,7 +19,7 @@ import java.util.Set;
 public class Contratos {
     @Id
     @NonNull
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="contr_id")
     private Long contrId;
 

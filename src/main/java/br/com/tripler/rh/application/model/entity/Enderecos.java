@@ -18,6 +18,7 @@ import java.util.Set;
 public class Enderecos {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="end_id")
     private Long endId;
 

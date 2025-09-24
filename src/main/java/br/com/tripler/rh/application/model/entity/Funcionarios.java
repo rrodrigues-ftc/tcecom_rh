@@ -19,6 +19,7 @@ import java.util.Set;
 public class Funcionarios {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="func_Id")
     private Long funcId;
 

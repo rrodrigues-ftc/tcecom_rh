@@ -18,6 +18,7 @@ import java.util.Set;
 public class Cargos {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="cargo_id")
     private Long cargoId;
 

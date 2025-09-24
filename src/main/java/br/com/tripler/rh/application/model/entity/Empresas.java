@@ -18,6 +18,7 @@ import java.util.Set;
 public class Empresas {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="emp_id")
     private Long empId;
 
@@ -39,11 +40,11 @@ public class Empresas {
     @Column(name="emp_endereco_Id")
     private Long empEnderecoId;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "tab_areas",
-            joinColumns = @JoinColumn(name = "area_empresa_id"))
+//    @OneToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "tab_areas",
+//            joinColumns = @JoinColumn(name = "area_empresa_id"))
 //            inverseJoinColumns = @JoinColumn(name = "area_id"))
-    private Set<Empresas> empresas;
+//    private Set<Empresas> empresas;
 
 
 }

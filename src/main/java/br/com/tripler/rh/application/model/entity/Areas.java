@@ -16,6 +16,7 @@ import java.util.Set;
 @Table(name = "tab_areas", schema="rtcecom_rh")
 public class Areas {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long areaId;
 
@@ -23,7 +24,7 @@ public class Areas {
     private String areaNome;
 
     @Column(name="area_empresa_id")
-    private String areaEmpresaId;
+    private Long areaEmpresaId;
 
     @Column(name="area_encarregado_id")
     private Long areaEncarregadoId;

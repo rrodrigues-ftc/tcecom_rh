@@ -19,6 +19,7 @@ import java.util.Set;
 public class Salarios {
     @Id
     @NonNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="sal_id")
     private Long salId;
 
