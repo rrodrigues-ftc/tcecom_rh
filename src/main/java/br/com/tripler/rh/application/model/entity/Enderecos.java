@@ -22,8 +22,9 @@ public class Enderecos {
     @Column(name="end_id")
     private Long endId;
 
-    @Column(name="end_logradouro_id")
-    private Long endLogradouroId;
+    @ManyToOne
+    @JoinColumn(name = "end_logradouro_id")
+    private DominioLogradouros dominioLogradouros;
 
     @Column(name="end_nome")
     private String endNome;
@@ -37,14 +38,16 @@ public class Enderecos {
     @Column(name="end_cep")
     private String endCep;
 
-    @Column(name="end_codigo_municipio")
-    private Long endCodMunicipio;
+    @ManyToOne
+    @JoinColumn(name = "end_codigo_municipio")
+    private DominioMunicipios dominioMunicipios;
 
     @Column(name="end_tipo_id")
     private Long endTipoId;
 
     @Column(name="end_cpf_cnpj")
     private String endCpfCnpj;
+
 
 //    @OneToOne(fetch = FetchType.LAZY)
 //    @JoinTable(name = "tab_dom_logradouros",

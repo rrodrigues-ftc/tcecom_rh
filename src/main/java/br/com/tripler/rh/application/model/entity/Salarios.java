@@ -23,11 +23,13 @@ public class Salarios {
     @Column(name="sal_id")
     private Long salId;
 
-    @Column(name="sal_funcionario_id")
-    private Long salFuncionarioId;
+    @ManyToOne
+    @JoinColumn(name = "sal_funcionario_id")
+    private Funcionarios funcionario;
 
-    @Column(name="sal_contrato_id")
-    private Long salContratoId;
+    @ManyToOne
+    @JoinColumn(name = "sal_contrato_id")
+    private Contratos contrato;
 
     @Column(name="sal_data_referencia")
     private LocalDate salDataReferencia;
@@ -38,11 +40,13 @@ public class Salarios {
     @Column(name="sal_Motivo")
     private String salMotivo;
 
-    @Column(name="sal_cargo_id")
-    private Long salCargoId;
+    @ManyToOne
+    @JoinColumn(name = "sal_cargo_id")
+    private Cargos cargo;
 
-    @Column(name="sal_setor_id")
-    private Long salSetorId;
+    @ManyToOne
+    @JoinColumn(name = "sal_setor_id")
+    private Setores setor;
 
 //    @ManyToMany(fetch = FetchType.LAZY)
 //    @JoinTable(name = "tab_funcionarios",
